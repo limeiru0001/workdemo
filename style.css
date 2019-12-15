@@ -1,0 +1,113 @@
+*{
+		padding:0px;
+		margin:0px;
+}
+ul,li{
+	list-style: none;
+}
+
+/*提示部分*/
+.head{
+	height: 22px;
+	background-color: #ccc;
+}
+
+/*限制文字移动区域*/
+.head div{
+	height: 20px;
+	width: 800px;
+	position: relative;
+	left: 220px;
+	float: left;
+	overflow: hidden;
+}
+
+/*文字盒子设置*/
+#text{
+	position: relative;
+	left: 600px;
+	color: red;
+	font-size: 13px;
+}
+
+/*提示喇叭设置*/
+.head>img{
+	position: absolute;
+	left: 200px;
+	top: 2px;
+}
+
+
+/*轮播部分*/
+.box{
+	height:382px;
+	width:1200px;
+	margin-top:32px;
+	margin:0 auto;
+	margin-top: 15px;
+	position:relative;
+	overflow: hidden;
+}
+
+/*图片最外部盒子*/
+.slider{
+	width:8400px;
+	height:382px;
+	position:absolute;
+	left:-1200px;
+}
+
+/*每张图片盒子*/
+.slide{
+	width:1200px;
+	overflow: hidden;
+	float:left;
+}
+
+/*左右箭头设置*/
+.box>span{
+	display: block;
+	width:30px;
+	height:50px;
+	line-height:50px;
+	text-align: center;	
+	cursor: pointer;
+	top:175px;
+	background:red;
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;
+}
+
+/*左箭头*/
+#left{
+	left:30px;
+}
+/*右箭头*/
+#right{
+	right:30px;
+}
+
+/*小按钮*/
+.nav{
+	position:absolute;
+	margin-left:500px;
+	margin-top:360px;
+	cursor: pointer;
+}
+.nav>li{
+	float:left;
+	width:20px;
+	height:20px;
+	background:#ccc;
+	margin:0 10px;
+	border-radius: 50%;
+	text-align: center;
+	line-height:20px;
+	cursor: pointer;
+	font-size: 13px;
+}
+.nav .active{
+	background:red;
+	color:white;
+}
